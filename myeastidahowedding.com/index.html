@@ -2,10 +2,62 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>title</title>
-  <link rel="stylesheet" href="stylesheet.css" type="text/css">
+    <title>My East Idaho Wedding</title>
+  <link rel="stylesheet" href="styles/styles.css" type="text/css">
   </head>
   <body>
-  
+  	<!--nav-->
+  	<div id="nav-wrap">
+  	<div id="scroller-anchor"></div>
+  		<div id="nav">
+    		<ul class="clearfix">
+      			<a href="#about"><li class="nav-btn active" data-row-id="row1">About Me</li></a>
+      			<a href="#style1"><li class="nav-btn" data-row-id="row2">Style 1</li></a>
+      			<a href="#style2"><li class="nav-btn" data-row-id="row3">Style 2</li></a>
+      			<a href="#style3"><li class="nav-btn" data-row-id="row4">Style 3</li></a>
+      			<a href="#contact"><li class="nav-btn" data-row-id="row5">Contact Me</li></a>
+      			<a href="#reviews"><li class="nav-btn" data-row-id="row6">Reviews</li></a>
+    			<div id="nav-indicator"></div>
+    		</ul>
+  		</div>
+	</div>
+
+<div id="content-wrap">
+  <h1 id="topOfPage">My East Idaho Wedding</h1>
+  <h2>tagline here</h2>
+  <!--photo slider-->
+  <div class="photoslider-container">
+	<img class="weddingpic fade" src="images/028.jpg" width="100%">
+	<img class="weddingpic fade" src="images/031.jpg" width="100%">
+	<img class="weddingpic fade" src="images/032.jpg" width="100%">
+	<img class="weddingpic fade" src="images/038.jpg" width="100%">
+	<img class="weddingpic fade" src="images/095.jpg" width="100%">
+	<img class="weddingpic fade" src="images/156.jpg" width="100%">
+	<img class="weddingpic fade" src="images/166.jpg" width="100%">
+
+	<!--next/previous-->
+	<a class="prev" onclick="plusSlidesBack(-1)">&#10094;</a>
+	<a class="next" onclick="plusSlides(1)">&#10095;</a>
+   </div>
+   <script src="js/photoslider.js"></script>
+
+   <!--sections-->
+  <a id="about"><div class="row row-nav" data-height="100" id="row1">About Me
+  </div></a>
+  <a id="style1"><div class="row row-nav" data-height="200" id="row2">Style 1
+  </div></a>
+  <a id="style2"><div class="row row-nav" data-height="280" id="row3">Style 2
+  </div></a>
+  <a id="style3"><div class="row row-nav" data-height="400" id="row4">Style 3
+  </div></a>
+  <a id="contact"><div class="row row-nav" data-height="50" id="row5">Contact Me
+  </div></a>
+  <a id="reviews"><div class="row row-nav" data-height="300" id="row6">Reviews
+  </div></a>
+
+  <a href="#topOfPage"><div id="top">Top</div></a>
+</div>
+
+<!-- add form submission button? -->
   </body>
 </html>
